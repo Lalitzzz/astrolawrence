@@ -33,7 +33,7 @@ export default function Footer() {
               <li><Link href="/services" className="text-purple-100 hover:text-amber-300 transition hover:pl-2 block">Birth Chart Reading</Link></li>
               <li><Link href="/services" className="text-purple-100 hover:text-amber-300 transition hover:pl-2 block">Relationship Analysis</Link></li>
               <li><Link href="/services" className="text-purple-100 hover:text-amber-300 transition hover:pl-2 block">Career Guidance</Link></li>
-              <li><Link href="/services" className="text-purple-100 hover:text-amber-300 transition hover:pl-2 block">Yearly Forecast</Link></li>
+              <li><Link href="/services" className="text-purple-100 hover:text-amber-300 transition hover:pl-2 block">Yearly Forecasts</Link></li>
             </ul>
           </div>
 

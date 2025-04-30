@@ -83,7 +83,7 @@ export default function Contact() {
         console.log("Email submission failed, fallback to WhatsApp", emailError);
       }
 
-      window.open(`https://wa.me/8302650986?text=${whatsappMessage}`, "_blank");
+      window.open(`https://wa.me/918302650986?text=${whatsappMessage}`, "_blank");
       alert("Your message has been sent via WhatsApp!");
       setFormData({ name: "", email: "", service: "", message: "" });
     } catch (error) {
@@ -212,7 +212,7 @@ export default function Contact() {
                 </h2>
                 <div className="space-y-6 text-blue-100">
                   <InfoItem icon="📍" title="Location" desc="Jaipur" />
-                  <InfoItem icon="📞" title="Phone" desc="+91 8302650986" />
+                  <InfoItem icon="📞" title="Phone" desc="918302650986" />
                   <InfoItem icon="✉️" title="Email" desc="phalodipraveengarg@gmail.com" />
                 </div>
               </div>
@@ -226,7 +226,7 @@ export default function Contact() {
                 </div>
                 <div className="mt-6 text-sm text-center">
                   <h3 className="text-lg font-semibold mb-2">Emergency Readings</h3>
-                  <p>For urgent matters, call: <br /> +91 8302650986</p>
+                  <p>For urgent matters, please call on : <br /> 918302650986</p>
                 </div>
               </div>
             </motion.div>
@@ -236,7 +236,7 @@ export default function Contact() {
         {/* WhatsApp Floating Button */}
         <div className="fixed bottom-6 right-6 z-50">
           <a
-            href="https://wa.me/8302650986?text=Hello%20Cosmic%20Wisdom,%20I%20would%20like%20to%20inquire%20about%20your%20services"
+            href="https://wa.me/918302650986?text=Hello%20Cosmic%20Wisdom,%20I%20would%20like%20to%20inquire%20about%20your%20services"
             target="_blank"
             rel="noopener noreferrer"
             className="bg-green-500 hover:bg-green-600 text-white rounded-full p-4 shadow-lg flex items-center justify-center transition-all duration-300"
