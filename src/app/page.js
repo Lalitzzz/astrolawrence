@@ -70,7 +70,7 @@ export default function Home() {
       {/* Animated Stars Background */}
       <div className="fixed inset-0 overflow-hidden pointer-events-none">
         {stars.map((star, i) => (
-          <div 
+          <div
             key={i}
             className="absolute rounded-full bg-white animate-twinkle"
             style={{
@@ -91,8 +91,8 @@ export default function Home() {
           <div className="absolute inset-0 bg-[url('/cosmic-texture.png')] opacity-10"></div>
           <div className="absolute inset-0 bg-gradient-to-b from-transparent via-transparent to-black/70"></div>
         </div>
-        
-        <motion.div 
+
+        <motion.div
           initial="hidden"
           animate="visible"
           variants={containerVariants}
@@ -103,15 +103,17 @@ export default function Home() {
               <Sparkles className="w-4 h-4 mr-2" /> Cosmic Guidance Since 2017
             </div>
           </motion.div>
-          
+
           <motion.h1 variants={itemVariants} className="font-serif text-5xl md:text-7xl font-bold mb-6 leading-tight bg-clip-text text-transparent bg-gradient-to-r from-amber-200 via-pink-300 to-violet-300">
             Unlock Your Cosmic Blueprint
           </motion.h1>
-          
+
           <motion.p variants={itemVariants} className="text-xl mb-8 max-w-2xl mx-auto text-gray-300">
-            Professional astrological guidance to help you navigate life's challenges and opportunities.
+            Professional astrological guidance to help you navigate life&rsquo;s challenges and opportunities.
           </motion.p>
-          
+
+
+
           <motion.div variants={itemVariants}>
             <Link href="/contact" className="relative overflow-hidden group bg-gradient-to-r from-amber-400 to-pink-500 hover:from-amber-500 hover:to-pink-600 text-gray-900 font-bold py-4 px-10 rounded-full transition-all duration-300 transform hover:scale-105 shadow-lg hover:shadow-xl hover:shadow-amber-500/20">
               <span className="relative z-10">Book a Consultation</span>
@@ -125,7 +127,7 @@ export default function Home() {
       <section className="py-20 relative">
         <div className="absolute top-0 left-0 right-0 h-32 bg-gradient-to-b from-black to-transparent z-0"></div>
         <div className="container mx-auto px-6 relative z-10">
-          <motion.div 
+          <motion.div
             initial={{ opacity: 0, y: 30 }}
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6 }}
@@ -136,10 +138,10 @@ export default function Home() {
             <div className="w-24 h-1 bg-gradient-to-r from-amber-400 to-pink-500 mx-auto mb-6"></div>
             <p className="text-gray-400 max-w-2xl mx-auto">Discover how the stars influence your life path with our specialized readings</p>
           </motion.div>
-          
+
           <div className="grid md:grid-cols-3 gap-8">
             {services.map((service, index) => (
-              <motion.div 
+              <motion.div
                 key={index}
                 initial={{ opacity: 0, y: 30 }}
                 whileInView={{ opacity: 1, y: 0 }}
@@ -172,7 +174,7 @@ export default function Home() {
       <section className="py-20 relative">
         <div className="absolute inset-0 bg-[url('/galaxy-pattern.png')] opacity-10"></div>
         <div className="container mx-auto px-6 relative">
-          <motion.div 
+          <motion.div
             initial={{ opacity: 0 }}
             whileInView={{ opacity: 1 }}
             transition={{ duration: 0.6 }}
@@ -197,117 +199,117 @@ export default function Home() {
               </div>
             </div>
             <div className="md:w-1/2">
-  <motion.div 
-    initial={{ scale: 0.95, opacity: 0 }}
-    whileInView={{ 
-      scale: 1, 
-      opacity: 1,
-      transition: { duration: 0.6 }
-    }}
-    viewport={{ once: true }}
-    className="relative mx-auto w-3/4 md:w-full max-w-md"
-  >
-    {/* Glowing Border Animation */}
-    <motion.div 
-      initial={{ opacity: 0 }}
-      animate={{ 
-        opacity: [0, 0.3, 0],
-        scale: [1, 1.05, 1]
-      }}
-      transition={{
-        duration: 4,
-        repeat: Infinity,
-        ease: "easeInOut"
-      }}
-      className="absolute -inset-2 bg-gradient-to-r from-amber-400 to-pink-500 rounded-xl blur opacity-0"
-    />
-    
-    {/* Main Image Container */}
-    <motion.div 
-      whileHover={{
-        scale: 1.02,
-        transition: { duration: 0.3 }
-      }}
-      className="relative rounded-xl overflow-hidden shadow-2xl border border-gray-700/50"
-    >
-      {/* Floating Animation */}
-      <motion.img 
-        src="/santh.png" 
-        alt="Astrologer"
-        initial={{ y: 0 }}
-        animate={{
-          y: [-5, 5, -5],
-        }}
-        transition={{
-          duration: 8,
-          repeat: Infinity,
-          ease: "easeInOut"
-        }}
-        className="w-full h-auto transform hover:scale-105 transition duration-700"
-      />
-      
-      {/* Name Tag with Pulsing Effect */}
-      <motion.div 
-        className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black to-transparent p-6"
-        initial={{ opacity: 0.9 }}
-        animate={{ opacity: [0.9, 1, 0.9] }}
-        transition={{
-          duration: 3,
-          repeat: Infinity
-        }}
-      >
-        <h3 className="text-white font-serif text-xl">Praveen Garg</h3>
-        <motion.p 
-          className="text-amber-400"
-          animate={{
-            textShadow: [
-              "0 0 8px rgba(251, 191, 36, 0.5)",
-              "0 0 12px rgba(251, 191, 36, 0.8)",
-              "0 0 8px rgba(251, 191, 36, 0.5)"
-            ]
-          }}
-          transition={{
-            duration: 3,
-            repeat: Infinity
-          }}
-        >
-          Master Astrologer
-        </motion.p>
-      </motion.div>
-    </motion.div>
-    
-    {/* Floating Stars Around Image */}
-    {[1, 2, 3, 4].map((i) => (
-      <motion.div
-        key={i}
-        className="absolute rounded-full bg-amber-400"
-        initial={{
-          opacity: 0,
-          scale: 0
-        }}
-        animate={{
-          opacity: [0, 0.8, 0],
-          scale: [0, 1, 0],
-          x: Math.random() * 100 - 50,
-          y: Math.random() * 100 - 50
-        }}
-        transition={{
-          duration: 4 + Math.random() * 3,
-          repeat: Infinity,
-          delay: i * 0.5,
-          ease: "easeInOut"
-        }}
-        style={{
-          width: `${Math.random() * 6 + 3}px`,
-          height: `${Math.random() * 6 + 3}px`,
-          left: `${50 + (Math.random() * 20 - 10)}%`,
-          top: `${50 + (Math.random() * 20 - 10)}%`,
-          filter: "blur(1px)"
-        }}
-      />
-    ))}
-  </motion.div>
-</div>
+              <motion.div
+                initial={{ scale: 0.95, opacity: 0 }}
+                whileInView={{
+                  scale: 1,
+                  opacity: 1,
+                  transition: { duration: 0.6 }
+                }}
+                viewport={{ once: true }}
+                className="relative mx-auto w-3/4 md:w-full max-w-md"
+              >
+                {/* Glowing Border Animation */}
+                <motion.div
+                  initial={{ opacity: 0 }}
+                  animate={{
+                    opacity: [0, 0.3, 0],
+                    scale: [1, 1.05, 1]
+                  }}
+                  transition={{
+                    duration: 4,
+                    repeat: Infinity,
+                    ease: "easeInOut"
+                  }}
+                  className="absolute -inset-2 bg-gradient-to-r from-amber-400 to-pink-500 rounded-xl blur opacity-0"
+                />
+
+                {/* Main Image Container */}
+                <motion.div
+                  whileHover={{
+                    scale: 1.02,
+                    transition: { duration: 0.3 }
+                  }}
+                  className="relative rounded-xl overflow-hidden shadow-2xl border border-gray-700/50"
+                >
+                  {/* Floating Animation */}
+                  <motion.img
+                    src="/santh.png"
+                    alt="Astrologer"
+                    initial={{ y: 0 }}
+                    animate={{
+                      y: [-5, 5, -5],
+                    }}
+                    transition={{
+                      duration: 8,
+                      repeat: Infinity,
+                      ease: "easeInOut"
+                    }}
+                    className="w-full h-auto transform hover:scale-105 transition duration-700"
+                  />
+
+                  {/* Name Tag with Pulsing Effect */}
+                  <motion.div
+                    className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black to-transparent p-6"
+                    initial={{ opacity: 0.9 }}
+                    animate={{ opacity: [0.9, 1, 0.9] }}
+                    transition={{
+                      duration: 3,
+                      repeat: Infinity
+                    }}
+                  >
+                    <h3 className="text-white font-serif text-xl">Praveen Garg</h3>
+                    <motion.p
+                      className="text-amber-400"
+                      animate={{
+                        textShadow: [
+                          "0 0 8px rgba(251, 191, 36, 0.5)",
+                          "0 0 12px rgba(251, 191, 36, 0.8)",
+                          "0 0 8px rgba(251, 191, 36, 0.5)"
+                        ]
+                      }}
+                      transition={{
+                        duration: 3,
+                        repeat: Infinity
+                      }}
+                    >
+                      Master Astrologer
+                    </motion.p>
+                  </motion.div>
+                </motion.div>
+
+                {/* Floating Stars Around Image */}
+                {[1, 2, 3, 4].map((i) => (
+                  <motion.div
+                    key={i}
+                    className="absolute rounded-full bg-amber-400"
+                    initial={{
+                      opacity: 0,
+                      scale: 0
+                    }}
+                    animate={{
+                      opacity: [0, 0.8, 0],
+                      scale: [0, 1, 0],
+                      x: Math.random() * 100 - 50,
+                      y: Math.random() * 100 - 50
+                    }}
+                    transition={{
+                      duration: 4 + Math.random() * 3,
+                      repeat: Infinity,
+                      delay: i * 0.5,
+                      ease: "easeInOut"
+                    }}
+                    style={{
+                      width: `${Math.random() * 6 + 3}px`,
+                      height: `${Math.random() * 6 + 3}px`,
+                      left: `${50 + (Math.random() * 20 - 10)}%`,
+                      top: `${50 + (Math.random() * 20 - 10)}%`,
+                      filter: "blur(1px)"
+                    }}
+                  />
+                ))}
+              </motion.div>
+            </div>
           </motion.div>
         </div>
       </section>
@@ -320,18 +322,22 @@ export default function Home() {
         <div className="absolute inset-0 bg-[url('/cosmic-spiral.png')] opacity-10 bg-cover bg-center"></div>
         <div className="absolute inset-0 bg-gradient-to-b from-transparent via-black/70 to-black"></div>
         <div className="container mx-auto px-6 text-center relative z-10">
-          <motion.div 
+          <motion.div
             initial={{ opacity: 0, y: 30 }}
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6 }}
             viewport={{ once: true }}
           >
             <h2 className="font-serif text-4xl mb-6 text-white">Ready to Discover Your Cosmic Path?</h2>
-            <p className="text-xl mb-8 max-w-2xl mx-auto text-gray-300">Schedule a consultation today and gain valuable insights into your life's journey.</p>
+            <p className="text-xl mb-8 max-w-2xl mx-auto text-gray-300">
+              Schedule a consultation today and gain valuable insights into your life&rsquo;s journey.
+            </p>
+
+
             <div className="flex justify-center space-x-4">
 
-              <Link href="/contact"  className="relative overflow-hidden group bg-gradient-to-r from-amber-400 to-pink-500 hover:from-amber-500 hover:to-pink-600 text-gray-900 font-bold py-4 px-10 rounded-full transition-all duration-300 transform hover:scale-105 shadow-lg hover:shadow-xl hover:shadow-amber-500/20">
-                 <span className="relative z-10">Book Now</span>
+              <Link href="/contact" className="relative overflow-hidden group bg-gradient-to-r from-amber-400 to-pink-500 hover:from-amber-500 hover:to-pink-600 text-gray-900 font-bold py-4 px-10 rounded-full transition-all duration-300 transform hover:scale-105 shadow-lg hover:shadow-xl hover:shadow-amber-500/20">
+                <span className="relative z-10">Book Now</span>
                 <span className="absolute inset-0 bg-gradient-to-r from-amber-500 to-pink-600 opacity-0 group-hover:opacity-100 transition-opacity duration-300 rounded-full"></span>
               </Link>
               {/* <button className="border border-gray-600 hover:border-amber-400/50 text-white font-bold py-4 px-10 rounded-full transition-all duration-300 hover:bg-gray-800/30">
@@ -343,7 +349,7 @@ export default function Home() {
       </section>
 
       {/* Footer */}
-     /
+      /
 
       {/* Global Styles */}
       <style jsx global>{`
