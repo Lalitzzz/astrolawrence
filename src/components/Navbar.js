@@ -89,7 +89,7 @@ export default function Navbar() {
           href="/" 
           className="text-3xl font-serif font-bold text-gray-900 drop-shadow-sm hover:text-purple-700 transition duration-300"
         >
-          AstroLawrence
+          Cosmic Wisdom
         </Link>
 
         <div className="hidden md:flex space-x-8">
